@@ -1,5 +1,5 @@
 .quizz-container {
-  @apply text-center;
+  @apply text-center mt-10;
 }
 
 .quizz-logo {
@@ -12,21 +12,38 @@
 }
 
 .quizz-questions {
-  @apply p-4 text-5xl;
+  @apply p-5 text-5xl;
+}
+
+.quizz-questions h3 {
+  @apply bg-violet-950 p-4 rounded-xl
 }
 
 .quizz-options {
-  width: 800px;
-  @apply flex flex-wrap justify-center gap-1 m-5;
+  @apply flex flex-wrap justify-center gap-2 m-5;
 }
 
 .btn-option {
+  width: 30rem;
+  text-align: center;
   border: 1px solid #fff;
   border-radius: 10px;
   padding: 18px 80px;
-  @apply flex text-2xl font-semibold;
+  @apply text-2xl font-semibold;
 }
 
 .btn-option:hover {
   background-color: rgb(98, 175, 21);
+}
+
+.quizz-result {
+  @apply p-10
+}
+
+.quizz-result h1 {
+  @apply text-3xl
+}
+
+.quizz-result p {
+  @apply bg-violet-950 mt-8 p-8 text-3xl font-extrabold rounded-xl
 }
